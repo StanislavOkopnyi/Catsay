@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "cat-say"
+version = "0.1.0"
+description = "What does the cat say?"
+authors = ["Pineapple_Juice <st.okopnyi@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cat_say"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+cat-say = "cat_say.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
